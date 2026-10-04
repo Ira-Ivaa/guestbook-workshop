@@ -58,7 +58,7 @@ git switch -c to-prod
 - [x] Настройки собраны в **`config.py`** (pydantic-settings); в `main.py` нет зашитых адреса и пароля
 - [x] Секретов нет ни в коде, ни в коммите: `.env` в `.gitignore`, в репозитории есть **`.env.example`**, в `compose.yaml` пароль через **`${...}`**
 - [x] Есть **`Dockerfile`** (зависимости ставятся до кода, `--host 0.0.0.0`) и **`.dockerignore`** (без `.env`, `.git`, `.venv`)
-- [ ] **`compose.yaml`** поднимает `app` + `db`; наружу проброшен только `app`; есть `depends_on: service_healthy`, `healthcheck` и `volume`
+- [x] **`compose.yaml`** поднимает `app` + `db`; наружу проброшен только `app`; есть `depends_on: service_healthy`, `healthcheck` и `volume`
 - [ ] **Приёмочный тест пройден:** сообщение добавляется, отображается и переживает `down`/`up`
 - [ ] `git grep -i supersecret` не находит ничего; работа влита в `main` через merge
 
