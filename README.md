@@ -53,7 +53,7 @@ git switch -c to-prod
 
 ## ✅ Критерии готовности
 
-- [ ] Зависимости на **uv**: есть `pyproject.toml` и `uv.lock`, `requirements.txt` удалён, версия Python закреплена (`.python-version`)
+- [x] Зависимости на **uv**: есть `pyproject.toml` и `uv.lock`, `requirements.txt` удалён, версия Python закреплена (`.python-version`)
 - [ ] Есть **`.gitignore`** с `.venv`, `.env`, `__pycache__`
 - [ ] Настройки собраны в **`config.py`** (pydantic-settings); в `main.py` нет зашитых адреса и пароля
 - [ ] Секретов нет ни в коде, ни в коммите: `.env` в `.gitignore`, в репозитории есть **`.env.example`**, в `compose.yaml` пароль через **`${...}`**
