@@ -31,7 +31,7 @@ class Message(BaseModel):
 
 @app.get("/")
 def index():
-    return {"message": settings.greeting, "version": "1.1.0"}
+    return {"message": settings.greeting, "version": "1.2.0"}
 
 
 @app.get("/health")
