@@ -1,7 +1,6 @@
 services:
   app:
-    image: ghcr.io/ira-ivaa/guestbook-workshop:1.0.0
-    build: .
+    image: ghcr.io/ira-ivaa/guestbook-workshop:1.1.0
     ports:
       - "8000:8000"
     environment:
